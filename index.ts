@@ -20,6 +20,9 @@ let Students = [{StudentName:"", StudentSuname:"",StudentAge:"",  StudentGrade:"
 
 let max=40;  
 var highest =0; 
+var name="ben";
+var surname="Kunutu";
+
 for(var x= 0; x<Students.length; x++){
   if (Students[x].StudentAge<max){
      highest =Students[x].StudentAge;
@@ -27,5 +30,5 @@ for(var x= 0; x<Students.length; x++){
   }
 }
 
-  console.log(highest);
+  console.log(name +" "+ surname+ " " + highest)  ;
   
