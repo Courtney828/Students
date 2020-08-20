@@ -15,16 +15,17 @@ let Students = [{StudentName:"", StudentSuname:"",StudentAge:"",  StudentGrade:"
               {StudentName:"Keletso", StudentSuname:"Jab",StudentAge:18,StudentGrade:"G12"},
               {StudentName:"Ben", StudentSuname:"Kunutu",StudentAge:20,StudentGrade:"G12"
               }]
-      let max=0;  
-    
-function OldStudent (Students) {
-  if(Students.StudentAge > max)
-		return max;
+  
 
- console.log("The Oldest student is"+""+ Students); 
+
+let max=40;  
+var highest =0; 
+for(var x= 0; x<Students.length; x++){
+  if (Students[x].StudentAge<max){
+     highest =Students[x].StudentAge;
+    
+  }
 }
 
-
-
-  
+  console.log(highest);
   
