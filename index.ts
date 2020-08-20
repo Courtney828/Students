@@ -18,12 +18,12 @@ let Students = [{StudentName:"", StudentSurname:"",StudentAge:"",  StudentGrade:
   
 
 
-let max=40; 
+
 var highest =0; 
 var name, surname="";
 
 for(var x= 0; x<Students.length; x++){
-  if (Students[x].StudentAge<max){
+  if (Students[x].StudentAge>highest){
      highest =Students[x].StudentAge;
     name=Students[x].StudentName;
     surname=Students[x].StudentSurname;
