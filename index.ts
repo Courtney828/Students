@@ -19,18 +19,19 @@ let Students = [{StudentName:"", StudentSurname:"",StudentAge:"",  StudentGrade:
 
 
 
-var highest =0; 
-var name, surname="";
+var highest = 0;
+var name, surname = "";
 
-for(var x= 0; x<Students.length; x++){
-  if (Students[x].StudentAge>highest){
-     highest =Students[x].StudentAge;
-    name=Students[x].StudentName;
-    surname=Students[x].StudentSurname;
+for(var i = 0; i < Students.length; i++){
+  if(Students[i].StudentAge > highest){
+    highest = Students[i].StudentAge;
+    name = Students[i].StudentName;
+    surname = Students[i].StudentSurname;
+    
   }
 }
+console.log(name + "   " + surname + "  "  + "   " + highest);
 
-  console.log(name +" "+  " " + highest)  ;
 
 
 
