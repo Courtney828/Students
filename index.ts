@@ -5,7 +5,7 @@ import './style.css';
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 
-let Students = [{StudentName:"", StudentSurname:"",StudentAge:"",  StudentGrade:""},
+let students : Array<any> =[{StudentName:"", StudentSurname:"",StudentAge:"",  StudentGrade:""},
             {StudentName:"Courtney", StudentSurname:"Serongwa",StudentAge:13,StudentGrade:"G7"},
               {StudentName:"candy", StudentSurname:"Vile",StudentAge:14,StudentGrade:"G8"},
               {StudentName:"Palesa", StudentSurname:"Maja",StudentAge:15,StudentGrade:"G9"},
@@ -21,12 +21,11 @@ let Students = [{StudentName:"", StudentSurname:"",StudentAge:"",  StudentGrade:
 
 var highest = 0;
 var name, surname = "";
-
-for(var i = 0; i < Students.length; i++){
-  if(Students[i].StudentAge > highest){
-    highest = Students[i].StudentAge;
-    name = Students[i].StudentName;
-    surname = Students[i].StudentSurname;
+for(var x = 0; x < students.length; x++){
+  if(students[x].StudentAge > highest){
+  highest = students[x].StudentAge;
+  name = students[x].StudentName;
+  surname = students[x].StudentSurname;
     
   }
 }
