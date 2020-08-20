@@ -21,7 +21,7 @@ function OldStudent (Students) {
   if(Students.StudentAge > max)
 		return max;
 
- console.log("The Oldest student is"+ Students); 
+ console.log("The Oldest student is"+""+ Students); 
 }
 
 
